@@ -22,6 +22,7 @@ def sort_by_date(data, reverse=True):
     """
     return sorted(data, key=lambda x: datetime.strptime(x['date'], "%Y-%m-%dT%H:%M:%S.%f"), reverse=reverse)
 
+
 # Примеры входных данных для проверки функции
 data = [
     {'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
