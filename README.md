@@ -15,7 +15,7 @@ git clone https://github.com/miwke21/miwke_study.git
 
 1. Создайте локальную копию проекта
 2. Используйте функции в модулях widget.py, processing.py, masks.py
-3. Тестирование pytest
+3. Тестирование pytest с отчетом о покрытии
 
 ## Примеры возможного применения:
 
