@@ -24,3 +24,13 @@ git clone https://github.com/miwke21/miwke_study.git
 3. Сортировка операций по времени.
 4. Отображение только исполненных операций.
 5. Тестирование функций.
+
+## Тестирование:
+
+Результаты покрытия:
+File	statements	missing	excluded	coverage
+src\__init__.py	0	0	0	100%
+src\masks.py	6	0	0	100%
+src\processing.py	11	0	0	100%
+src\widget.py	12	1	0	92%
+Total	29	1	0	97%
