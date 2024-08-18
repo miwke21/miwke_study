@@ -1,7 +1,8 @@
 from datetime import datetime
+from typing import List, Dict, Any
 
 
-def filter_by_state(data, state='EXECUTED'):
+def filter_by_state(data: List[Dict[str, Any]], state: str = 'EXECUTED') -> List[Dict[str, Any]]:
     """
     Сортировка списка по ключу 'EXECUTED'.
 
@@ -12,7 +13,7 @@ def filter_by_state(data, state='EXECUTED'):
     return [entry for entry in data if entry.get('state') == state]
 
 
-def sort_by_date(data, reverse=True):
+def sort_by_date(data: List[Dict[str, Any]], reverse: bool = True) -> List[Dict[str, Any]]:
     """
     Сортирует список словарей по дате по убыванию.
 
@@ -22,6 +23,7 @@ def sort_by_date(data, reverse=True):
     """
     return sorted(data, key=lambda x: datetime.strptime(x['date'], "%Y-%m-%dT%H:%M:%S.%f"), reverse=reverse)
 
+
 # Примеры входных данных для проверки функции
 data = [
     {'id': 41428829, 'state': 'EXECUTED', 'date': '2019-07-03T18:35:29.512364'},
@@ -30,10 +32,8 @@ data = [
     {'id': 615064591, 'state': 'CANCELED', 'date': '2018-10-14T08:21:33.419441'}
 ]
 
-
 filtered_data = filter_by_state(data)
 print(filtered_data)
-
 
 sorted_data = sort_by_date(data)
 print(sorted_data)

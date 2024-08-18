@@ -1,5 +1,6 @@
 from .masks import get_mask_card_number, get_mask_account
 
+
 def mask_account_card(data: str) -> str:
     """
     Удаляет все символы кроме цифр из строки.
