@@ -17,6 +17,7 @@ git clone https://github.com/miwke21/miwke_study.git
 2. Используйте функции в модулях widget.py, processing.py, masks.py
 3. Тестирование pytest с отчетом о покрытии
 4. Использование инстурментов для работы с большим объемом данных через генераторы в файле generators.py
+5. Использование автоматического регистратора деталей выполнения функций в decorators.py
 
 ## Примеры возможного применения:
 
@@ -30,8 +31,9 @@ git clone https://github.com/miwke21/miwke_study.git
 
 Результаты покрытия:
 src\__init__.py	0	0	0	100%
+src\decorators.py	23	0	0	100%
 src\generators.py	20	0	0	100%
 src\masks.py	6	0	0	100%
 src\processing.py	11	0	0	100%
 src\widget.py	12	1	0	92%
-Total	49	1	0	98%
+Total	72	1	0	99%
