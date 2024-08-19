@@ -1,13 +1,12 @@
-from typing import Generator
-
+from typing import Generator, Dict
 
 def filter_by_currency(transactions: list, currency: str) -> Generator:
-    """id операции конкретной валюты"""
+    """Возвращает всю информацию об операции по заданной валюте"""
     for transaction in transactions:
         operation_amount_dic = transaction["operationAmount"]
         currency_dic = operation_amount_dic["currency"]
         if currency_dic["code"] == currency:
-            yield transaction["id"]
+            yield transaction
 
 
 def transaction_descriptions(transactions: list) -> Generator:
